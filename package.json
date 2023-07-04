@@ -1,0 +1,16 @@
+{
+  "name": "practica-proyecto-final",
+  "version": "1.0.0",
+  "description": "Repo que contiene las practicas y modificaciones del proyecto\r 04/07/2023 Se agrega BS en la pantalla index. Se aplican estilos en CSS. Aun falta hacer ciertos elementos responsive (header, intro, categorias, noticias). \r Link pages: https://agustind96.github.io/PracticasProyectoFinalCQC/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
+}
