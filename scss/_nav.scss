@@ -1,0 +1,27 @@
+nav{
+    background-color: $secondaryColor;
+    img{
+        width: 50px;
+    }
+    li{
+        a{
+            color: black;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+
+    .BuscarNav{
+        border: solid 1px $mainColor;
+        .btn{
+            background-color: $mainColor;
+            color: $secondaryColor;
+            border: none;
+            svg{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

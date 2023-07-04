@@ -10,4 +10,164 @@ h3 {
   font-size: 0.8em;
 }
 
+nav {
+  background-color: white;
+}
+nav img {
+  width: 50px;
+}
+nav li a {
+  color: black;
+}
+nav li a:hover {
+  color: rgb(66, 171, 52);
+}
+nav .BuscarNav {
+  border: solid 1px rgb(66, 171, 52);
+}
+nav .BuscarNav .btn {
+  background-color: rgb(66, 171, 52);
+  color: white;
+  border: none;
+}
+nav .BuscarNav .btn svg {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+header .FondoTextoCarrusel {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 150px;
+  width: 400px;
+  margin-left: 600px;
+  margin-bottom: 150px;
+}
+header .FondoCarrusel p {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.IntroduccionIndex {
+  background-color: rgb(66, 171, 52);
+  padding: 20px;
+  margin: 30px;
+  width: 1280px;
+}
+.IntroduccionIndex h1 {
+  text-align: center;
+}
+.IntroduccionIndex p {
+  text-align: center;
+}
+
+.ProductosIndex {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+.ProductosIndex h2 {
+  text-align: center;
+}
+.ProductosIndex .ProductosIndexTarjetas {
+  display: flex;
+}
+.ProductosIndex .ProductosIndexTarjetas img {
+  object-fit: cover;
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+  align-self: center;
+  border-radius: 10px;
+}
+.ProductosIndex .ProductosIndexTarjetas h3 {
+  text-align: center;
+}
+.ProductosIndex .ProductosIndexTarjetas .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.ProductosIndex .ProductosIndexTarjetas .card-body a:hover {
+  background-color: green;
+}
+.ProductosIndex .ProductosIndexTarjetas .BotonTarjetas {
+  justify-content: center;
+}
+.ProductosIndex .Boton {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.ProductosIndex .Boton .BotonProductosIndex a {
+  text-decoration: none;
+  color: white;
+}
+.ProductosIndex .Boton .BotonProductosIndex a:hover {
+  background-color: green;
+}
+
+.CategoriasIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid rgba(0, 0, 0, 0.4) 3px;
+  padding: 15px;
+}
+.CategoriasIndex img {
+  width: 170px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(66, 171, 52);
+  margin-top: 30px;
+}
+.CategoriasIndex a img:hover {
+  background-color: green;
+}
+
+.InformacionIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+.InformacionIndex img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+.InformacionIndex .TextoNoticia1 {
+  background-color: rgba(66, 171, 52, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+}
+.InformacionIndex .TextoNoticia2 {
+  background-color: rgba(66, 171, 52, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+}
+
+footer {
+  background-color: rgb(66, 171, 52);
+  padding: 10px;
+}
+footer svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  margin-right: 10px;
+}
+
+/* TERMINA FOOTER */
+
 /*# sourceMappingURL=main.css.map */
