@@ -20,7 +20,7 @@ header{
 }
 //TERMINA HEADER
 //INICIA INTRODUCCION
-.IntroduccionIndex{
+ .IntroduccionIndex{
     background-color: $mainColor;
     padding: 20px;
     margin: 30px;
@@ -31,7 +31,7 @@ header{
     p{
         text-align: center;
     }
-}
+ }
 //TERMINA INTRODUCCION
 //INICIA PRODUCTOS DESTACADOS
 .ProductosIndex{
@@ -61,6 +61,8 @@ header{
             display: flex;
             flex-direction: column;
             a{
+                background-color: $mainColor;
+                border:none;
                 &:hover{
                     background-color: green;
                 }
@@ -70,18 +72,19 @@ header{
             justify-content: center;
         }
     }
-
     .Boton{
-        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
         .BotonProductosIndex{
+            background-color: $mainColor;
+            &:hover{
+                background-color: green;
+            }
             a{
                 text-decoration: none;
-                color: $secondaryColor;
-                &:hover{
-                    background-color: green;
-                }
+                color: white;
             }
         }
     }
@@ -124,21 +127,25 @@ header{
     }
     .TextoNoticia1{
         background-color: rgba(66,171,52, 0.5);
+        border-radius: 7px;
         display: flex;
         flex-direction: column;
         width: 300px;
         height: 200px;
+        padding: 5px;
     }
     .TextoNoticia2{
         background-color: rgba(66,171,52, 0.5);
+        border-radius: 7px;
         display: flex;
         flex-direction: column;
         width: 300px;
         height: 200px;
+        padding: 5px;
     }
  }
 //TERMINA NOTICIAS
-
+//INICIA FOOTER
 footer{
     background-color: $mainColor;
     padding: 10px ;
@@ -149,6 +156,4 @@ footer{
         margin-right: 10px;
      }
  }
- 
- 
  /* TERMINA FOOTER */

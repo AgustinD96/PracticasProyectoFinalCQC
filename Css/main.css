@@ -16,23 +16,22 @@ nav {
 nav img {
   width: 50px;
 }
-nav li a {
-  color: black;
-}
-nav li a:hover {
-  color: rgb(66, 171, 52);
-}
-nav .BuscarNav {
-  border: solid 1px rgb(66, 171, 52);
-}
-nav .BuscarNav .btn {
+nav .BotonesNav ul li a:hover {
   background-color: rgb(66, 171, 52);
-  color: white;
+}
+nav .BuscadorNav {
+  display: flex;
+}
+nav .BuscadorNav .btn {
+  background-color: rgb(66, 171, 52);
   border: none;
 }
-nav .BuscarNav .btn svg {
-  display: flex;
-  justify-content: center;
+nav .BuscadorNav .btn:hover {
+  background-color: green;
+}
+nav .BuscadorNav svg {
+  color: white;
+  margin-bottom: 4px;
 }
 
 header img {
@@ -93,6 +92,10 @@ header .FondoCarrusel p {
   display: flex;
   flex-direction: column;
 }
+.ProductosIndex .ProductosIndexTarjetas .card-body a {
+  background-color: rgb(66, 171, 52);
+  border: none;
+}
 .ProductosIndex .ProductosIndexTarjetas .card-body a:hover {
   background-color: green;
 }
@@ -100,16 +103,20 @@ header .FondoCarrusel p {
   justify-content: center;
 }
 .ProductosIndex .Boton {
-  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
+}
+.ProductosIndex .Boton .BotonProductosIndex {
+  background-color: rgb(66, 171, 52);
+}
+.ProductosIndex .Boton .BotonProductosIndex:hover {
+  background-color: green;
 }
 .ProductosIndex .Boton .BotonProductosIndex a {
   text-decoration: none;
   color: white;
-}
-.ProductosIndex .Boton .BotonProductosIndex a:hover {
-  background-color: green;
 }
 
 .CategoriasIndex {
@@ -144,17 +151,21 @@ header .FondoCarrusel p {
 }
 .InformacionIndex .TextoNoticia1 {
   background-color: rgba(66, 171, 52, 0.5);
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 200px;
+  padding: 5px;
 }
 .InformacionIndex .TextoNoticia2 {
   background-color: rgba(66, 171, 52, 0.5);
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 200px;
+  padding: 5px;
 }
 
 footer {
