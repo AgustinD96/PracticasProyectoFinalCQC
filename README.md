@@ -4,6 +4,9 @@ Repo que contiene las practicas y modificaciones del proyecto
 
 04/07/2023 11:10 a.m Se agregan archivos Sass
 
+09/07/2023 01:37 a.m Se agrega SASS al Index y se implementan mediaqueries.
+
+
 Link pages: https://agustind96.github.io/PracticasProyectoFinalCQC/
 
 Link del Repo: https://github.com/AgustinD96/PracticasProyectoFinalCQC.git
