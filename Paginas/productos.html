@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS de BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../Css/main.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Cuencos que Cuentan</title>
+</head>
+<body>
+    <!-- Inicia NAV -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <!-- LOGO -->
+            <img src="../Imagenes/logo/Logo.jpeg" alt="Logo de Cuencos que Cuentan">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- BOTON HAMBURGUESA -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="BotonesNav collapse navbar-collapse" id="navbarSupportedContent"> <!--Cuando BS usa un ID esJavaScript-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Paginas/cuidados.html">Cuidados Recomendados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Paginas/nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Paginas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <div class="BuscadorNav">
+            <form class="d-flex" role="search">
+              <input class="BuscarNav form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            </form>
+            </div>
+          </div>
+      </div>
+    </nav>
+    <!-- Fin Nav -->
+    <main>
+      <section class="DesplegableProductos">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Orednar Por:
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Lo más nuevo</a></li>
+            <li><a class="dropdown-item" href="#">Lo más vendido</a></li>
+            <li><a class="dropdown-item" href="#">Precio más alto</a></li>
+            <li><a class="dropdown-item" href="#">Precio más bajo</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="Filtros">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Filtrar Por:
+              </button>
+            </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <!-- desplegable categorias -->
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Diseños
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <ul>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="ColoresPastel">
+                              <label class="form-check-label" for="firstCheckbox">Colores Pastel</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="Lisos">
+                              <label class="form-check-label" for="secondCheckbox">Lisos</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="Monocromaticos">
+                              <label class="form-check-label" for="thirdCheckbox">Monocromáticos</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="ConRelieve">
+                                <label class="form-check-label" for="thirdCheckbox">Con Relieve</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="Colecciones">
+                                <label class="form-check-label" for="thirdCheckbox">Colecciones</label>
+                              </li>
+                          </ul>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- desplegable diseños -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Diseños
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <ul>
+                          <ul class="list-group">
+                           <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="ColoresPastel">
+                              <label class="form-check-label" for="firstCheckbox">Colores Pastel</label>
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="Lisos">
+                            <label class="form-check-label" for="secondCheckbox">Lisos</label>
+                          </li>
+                          <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="Monocromaticos">
+                              <label class="form-check-label" for="thirdCheckbox">Monocromáticos</label>
+                          </li>
+                          <li class="list-group-item">
+                               <input class="form-check-input me-1" type="checkbox" value="" id="ConRelieve">
+                               <label class="form-check-label" for="thirdCheckbox">Con Relieve</label>
+                          </li>
+                          <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="Colecciones">
+                                <label class="form-check-label" for="thirdCheckbox">Colecciones</label>
+                          </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- desplegable capacidad -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Capacidad
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <ul>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="100cc">
+                              <label class="form-check-label" for="firstCheckbox">100cc</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="200cc">
+                              <label class="form-check-label" for="secondCheckbox">200cc</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="300cc">
+                              <label class="form-check-label" for="thirdCheckbox">300cc</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="400cc">
+                                <label class="form-check-label" for="thirdCheckbox">400cc</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="500cc">
+                                <label class="form-check-label" for="thirdCheckbox">500cc</label>
+                              </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- desplegable precio -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Precio
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <ul>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="$1000-$1500">
+                              <label class="form-check-label" for="firstCheckbox">$1000-$1500</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="$2000-$2500">
+                              <label class="form-check-label" for="secondCheckbox">$2000-$2500</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="$3000-$3500">
+                              <label class="form-check-label" for="thirdCheckbox">$3000-$3500</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="$4000-$4500">
+                                <label class="form-check-label" for="thirdCheckbox">$4000-$4500</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="$5000-$5500">
+                                <label class="form-check-label" for="thirdCheckbox">$5000-$5500</label>
+                              </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>   
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="Productos">
+        <section class="ProductosDestacados">
+        <figure>
+          <div class="card text-bg-dark">
+            <img src="..." class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card text-bg-dark">
+            <img src="..." class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </figure>
+        </section>
+        <figure>
+          <div class="card" style="width: 18rem;">
+            <img src="../Imagenes/cuencos/compoteras.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="card" style="width: 18rem;">
+            <img src="../Imagenes/cuencos/cuanco verde y marron.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="card" style="width: 18rem;">
+            <img src="../Imagenes/cuencos/cuenco doble.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="card" style="width: 18rem;">
+            <img src="../Imagenes/cuencos/cuenco flor y tabla.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="card" style="width: 18rem;">
+            <img src="../Imagenes/cuencos/cuenco marron.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="card" style="width: 18rem;">
+            <img src="../Imagenes/cuencos/cuenco mas tabla.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </figure>
+      </section>
+      
+    </main>
+    <footer>
+        <div class="card-footer bg-transparent border-success">
+         <a href="https://www.instagram.com/cuencos_que_cuentan/" target="_blank">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+             </svg></a>
+        </div>
+       </footer>
+       <!-- Script de BS -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

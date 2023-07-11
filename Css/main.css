@@ -178,8 +178,8 @@ footer svg {
   fill: white;
   margin-right: 10px;
 }
-
 /* TERMINA FOOTER */
+
 @media (max-width: 576px) {
   .HeaderIndex img {
     height: 250px;
