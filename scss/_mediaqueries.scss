@@ -61,8 +61,8 @@
 }
 // TERMINA QUERIES INDEX
 // INICIA PRODUCTOS
-@media (max-width: 576px){
-    .MainProductos{
+@media (max-width: 320px){
+    .mainProductos{
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
@@ -74,39 +74,39 @@
         "producto1 producto1"
         "producto2 producto2"
         "producto3 producto3";
-        .DesplegableProductos{
+        .desplegableProductos{
             grid-area: desplegable;
         }
-        .Filtros{
+        .filtrosProductos{
             grid-area: filtros;
             
         }
-        .Destacado1{
+        .destacado1{
             grid-area: destacado1;
         }
-        .Destacado2{
+        .destacado2{
             grid-area: destacado2;
         }
-        .Producto1{
+        .producto1{
             grid-area: producto1;
         }
-        .Producto2{
+        .producto2{
             grid-area: producto2;
         }
-        .Producto3{
+        .producto3{
             grid-area: producto3;
         }
-        .Producto4{
+        .producto4{
             grid-area: producto4;
         }
-        .Producto5{
+        .producto5{
             grid-area: producto5;
         }
     }
-    .Filtros{
+    .filtrosProductos{
         width: 50px;
         padding: 2px;
-        .DivPadre{
+        .divPadre{
             width:140px;
         }
         .accordion-body{
@@ -125,35 +125,37 @@
             }              
         }
     }
-    .Productos{
+    .productos{
         display: flex;
         flex-direction: column;
-        .ProductosDestacados{
+        .productosDestacados{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            .Destacado1{
+            .destacado1{
                 width: 300px;
                 margin-left: -36px;
             }
-            .Destacado2{
+            .destacado2{
                 width: 300px;
                 margin-left: -36px;
             }
         }
     }
-    .ProductosGeneral{
+    .productosGeneral{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .Producto1{
+    .producto1{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
-    .Producto2{
+    .producto2{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 }
 // TERMINA PRODUCTOS

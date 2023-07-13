@@ -1,5 +1,5 @@
 // INICIA DESPLEGABLE
-.DesplegableProductos{
+.desplegableProductos{
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -17,7 +17,7 @@
 }
 // TERMINA DESPLEGABLE
 // INICIAN FILTROS
-.Filtros{
+.filtrosProductos{
     width: 230px;
     padding: 5px;
     .DivPadre{
@@ -48,15 +48,15 @@
 }
 // TERMINAN FILTROS
 // INICIA PRODUCTOS
-.Productos{
-    .ProductosDestacados{
+.productos{
+    .productosDestacados{
         display: flex;
         justify-content: space-evenly;
         margin-left: 50px;
-        .Destacado1{
+        .destacado1{
            width: 500px;
         }
-        .Destacado2{
+        .destacado2{
             width: 500px;
             img{
                 object-fit: cover;
@@ -65,7 +65,7 @@
         }
     }
 
-    .ProductosGeneral{
+    .productosGeneral{
         display: flex;
         align-items: center;
         flex-direction: row;
