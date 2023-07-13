@@ -1,1 +1,102 @@
+// INICIA DESPLEGABLE
+.DesplegableProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+    .dropdown{
+        margin-right: 10px;
+    }
+    .btn{
+      background-color: $mainColor; 
+      border: none; 
+      &:hover{
+        background-color: green;
+      }
+    }
+}
+// TERMINA DESPLEGABLE
+// INICIAN FILTROS
+.Filtros{
+    width: 230px;
+    padding: 5px;
+    .DivPadre{
+        width: 250px;
+    }
+    .accordion-button{
+        background-color: $mainColor;
+        border: none;
+        color: white;
+        &:hover{
+            background-color: green;
+        }
+    }
+    .accordion-body{
+        width: 230px
+    }
+    .accordion{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+    }
+    .list-group{
+        width: 180px;
+        display: flex;
+        align-self: self-start;
+        margin-left:-48px;
+    }
+}
+// TERMINAN FILTROS
+// INICIA PRODUCTOS
+.Productos{
+    .ProductosDestacados{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 50px;
+        .Destacado1{
+           width: 500px;
+        }
+        .Destacado2{
+            width: 500px;
+            img{
+                object-fit: cover;
+                width: 185px;
+            }
+        }
+    }
 
+    .ProductosGeneral{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 50px;
+        
+     figure{
+        padding: 7px;
+        img{
+            width:180px;
+            height: 180px;
+            object-fit: cover;
+            align-self: center;
+            border-radius: 8px;
+            padding: 3px;
+        }
+        .card-body{
+            width: 200px;
+            align-self: center;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            background-color: $mainColor;
+            color: white;
+            border: none;
+            
+            &:hover{
+                background-color: green;
+            }
+        }
+    } 
+}
+}
+// TERMINA PRODUCTOS

@@ -1,0 +1,60 @@
+// GRIDS PRODUCTOS
+.MainProductos{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 20px auto;
+    gap: 2px;
+    grid-template-areas: 
+    "filtros desplegable desplegable desplegable desplegable desplegable"
+    "filtros desplegable desplegable desplegable desplegable desplegable"
+    "filtros destacado1 destacado1 destacado2 destacado2 ."
+    "filtros producto1  producto2  producto3 producto4 producto5"
+    ;
+
+    .DesplegableProductos{
+        grid-area: desplegable;
+    }
+    .Filtros{
+        grid-area: filtros;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .Destacado1{
+        grid-area: destacado1;
+    }
+    .Destacado2{
+        grid-area: destacado2;
+    }
+    .Producto1{
+        grid-area: producto1;
+    }
+    .Producto2{
+        grid-area: producto2;
+    }
+    .Producto3{
+        grid-area: producto3;
+    }
+    .Producto4{
+        grid-area: producto4;
+    }
+    .Producto5{
+        grid-area: producto5;
+    }
+    .Producto6{
+        grid-area: producto6;
+    }
+    .Producto7{
+        grid-area: producto7;
+    }
+    .Producto8{
+        grid-area: producto8;
+    }
+    .Producto9{
+        grid-area: producto9;
+    }
+    .Producto10{
+        grid-area: producto10;
+    }
+}
+// GRIDS PRODUCTOS

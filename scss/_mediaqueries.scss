@@ -58,5 +58,164 @@
     }
     }
    }
-}s
+}
 // TERMINA QUERIES INDEX
+// INICIA PRODUCTOS
+@media (max-width: 576px){
+    .MainProductos{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+        gap: 2px;
+        grid-template-areas: 
+        "filtros desplegable"
+        "destacado1 destacado1"
+        "destacado2 destacado2"
+        "producto1 producto1"
+        "producto2 producto2"
+        "producto3 producto3";
+        .DesplegableProductos{
+            grid-area: desplegable;
+        }
+        .Filtros{
+            grid-area: filtros;
+            
+        }
+        .Destacado1{
+            grid-area: destacado1;
+        }
+        .Destacado2{
+            grid-area: destacado2;
+        }
+        .Producto1{
+            grid-area: producto1;
+        }
+        .Producto2{
+            grid-area: producto2;
+        }
+        .Producto3{
+            grid-area: producto3;
+        }
+        .Producto4{
+            grid-area: producto4;
+        }
+        .Producto5{
+            grid-area: producto5;
+        }
+    }
+    .Filtros{
+        width: 50px;
+        padding: 2px;
+        .DivPadre{
+            width:140px;
+        }
+        .accordion-body{
+            width: 140px;
+            padding: 3px;
+        }
+        .list-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            font-size: 0.6rem;
+            .Ruptura1{
+                width: 70px;
+            }              
+        }
+    }
+    .Productos{
+        display: flex;
+        flex-direction: column;
+        .ProductosDestacados{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .Destacado1{
+                width: 300px;
+                margin-left: -36px;
+            }
+            .Destacado2{
+                width: 300px;
+                margin-left: -36px;
+            }
+        }
+    }
+    .ProductosGeneral{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Producto1{
+        display: flex;
+        flex-direction: column;
+    }
+    .Producto2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+// TERMINA PRODUCTOS
+// INICIA CUIDADOS RECOMENDADOS
+.IntroduccionCuidados{
+    display: flex;
+    align-items: center;
+    width: 260px;
+    padding: 3px;
+}
+.DesplegableCuidados{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    .accordion{
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .accordion-item{
+        padding: 5px;
+    }
+    .BotonDesplegable{
+        width: 300px;
+    }
+}
+// TERMINA CUIDADOS RECOMENDADOS
+// INICIA SOBRE NOSOTROS
+.IntroduccionNosotros{
+    display: flex;
+    align-items: center;
+    width: 310px;
+    padding: 3px;
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    .NuestraInfo{
+        display: flex;
+        flex-direction: column;
+
+        figure{
+            .card{
+                background-color: aqua;
+                .Nosotros1{
+                    display: flex;
+                    flex-direction: column;
+                    .col-md-8{
+
+                   
+                    .card-body{
+                        background-color: aqua;
+                    }
+                     }
+                }
+            }
+        }
+    }
+}
+// TERMINA SOBRE NOSOTROS
